@@ -52,7 +52,7 @@ Prever prever inadimplência do cliente para pagamento de empréstimo.
 ## Execução:
 
 1 - antes de tudo, certificar que tem instalado as tecnologias:
-pip install mlflow pandas scikit-learn matplotlib
+pip install mlflow pandas scikit-learn xgboost matplotlib
 
 
 2 - para executar o modelo Random Forest Classifier
