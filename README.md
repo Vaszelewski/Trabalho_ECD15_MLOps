@@ -7,7 +7,7 @@ O objetivo deste trabalho foi aplicar conceitos e práticas de MLOps para desenv
 
 ## Dataset e Problema:
 Loan Default Prediction Dataset
-[Acesso]([https://docs.docker.com/engine/install/](https://www.kaggle.com/datasets/nikhil1e9/loan-default))
+[Acesso](https://www.kaggle.com/datasets/nikhil1e9/loan-default)
 
 Prever prever inadimplência do cliente para pagamento de empréstimo.
 
