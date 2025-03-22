@@ -56,11 +56,13 @@ pip install mlflow pandas scikit-learn matplotlib
 
 
 2 - para executar o modelo Random Forest Classifier
+em um terminal: python defaultRandomForest.py (ou python3 defaultRandomForest.py)
 
-mlflow ui --backend-store-uri sqlite:///mlflowRf.db
+em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowRf.db
 
 
 3 - para executar o modelo XGBoost
+em um terminal: python defaultXgBoost.py (ou python3 defaultXgBoost.py)
 
-mlflow ui --backend-store-uri sqlite:///mlflowXg.db
+em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowXg.db
 
