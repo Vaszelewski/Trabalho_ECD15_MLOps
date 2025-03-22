@@ -21,7 +21,9 @@ Prever prever inadimplência do cliente para pagamento de empréstimo.
 
 ## Etapas do Projeto (MLOps Pipeline)
 - Exploração e Pré-processamento dos Dados
+
 -- Análise exploratória e tratamento de valores ausentes.
+
 -- Normalização/Padronização dos dados quando necessário.
 
 
