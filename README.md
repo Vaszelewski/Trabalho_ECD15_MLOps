@@ -24,6 +24,25 @@ Prever prever inadimplência do cliente para pagamento de empréstimo.
 - Análise exploratória e tratamento de valores ausentes.
 - Normalização/Padronização dos dados quando necessário.
 
+2 - Treinamento e Avaliação do Modelo
+- Implementação dos modelos Random Forest Classifier e XGBoost e comparação de métricas.
+- Utilização do MLflow para rastrear experimentos.
+
+**3 - Versionamento e Armazenamento do Modelo
+- Registro do modelo no MLflow Model Registry.
+
+**4 - Implantação do Modelo
+- Construção de uma API com FastAPI ou Flask para servir previsões (mlflow).
+- Deploy local.
+
+**5 - Monitoramento e Re-treinamento
+- Implementação de monitoramento de drift de dados com Evidently AI.
+- Definição de uma estratégia para re-treinamento automático do modelo.
+
+**6 - Conteinerização e Documentação
+- Instruções de execução/documentação do pipeline no repositório.
+
+
 
 ## Execução:
 
