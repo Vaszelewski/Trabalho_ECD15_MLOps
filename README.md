@@ -19,3 +19,9 @@ Prever prever inadimplência do cliente para pagamento de empréstimo.
 - FastAPI/Flask (para disponibilização do modelo via API, (ex. usando Mlflow)
 - GitHub (para controle de versão)
 
+## Execução:
+
+pip install mlflow pandas scikit-learn matplotlib
+
+mlflow ui --backend-store-uri sqlite:///mlflow.db
+
