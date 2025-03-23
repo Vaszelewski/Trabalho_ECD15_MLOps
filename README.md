@@ -34,7 +34,7 @@ Prever inadimplência do cliente para pagamento de empréstimo.
 - Registro do modelo no MLflow Model Registry.
 
 
-**4 - Implantação do Modelo
+4 - Implantação do Modelo
 - Construção de uma API com FastAPI ou Flask para servir previsões (mlflow).
 - Deploy local.
 
