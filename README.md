@@ -30,7 +30,7 @@ Prever inadimplência do cliente para pagamento de empréstimo.
 - Utilização do MLflow para rastrear experimentos.
 
 
-**3 - Versionamento e Armazenamento do Modelo
+3 - Versionamento e Armazenamento do Modelo
 - Registro do modelo no MLflow Model Registry.
 
 
