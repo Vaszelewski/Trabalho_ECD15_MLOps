@@ -65,6 +65,7 @@ em um terminal: python defaultXgBoost.py (ou python3 defaultXgBoost.py)
 
 em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowXg.db
 
-4 - Para fazer o promote dos modelos, executar:
+4 - Para fazer o promote do melhor modelo com valor F1 melhor que 0.60
+em um terminal: python default_promote.py (ou python3 default_promote.py)
 
 
