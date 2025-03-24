@@ -60,12 +60,17 @@ em um terminal: python defaultRandomForest.py (ou python3 defaultRandomForest.py
 
 em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowRf.db
 
+2.1 - Para fazer o promote do melhor modelo com valor F1 melhor que 0.60
+em um terminal: python defaultRf_promote.py (ou python3 defaultRf_promote.py)
+
+
 3 - para executar o modelo XGBoost
 em um terminal: python defaultXgBoost.py (ou python3 defaultXgBoost.py)
 
 em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowXg.db
 
-4 - Para fazer o promote do melhor modelo com valor F1 melhor que 0.60
-em um terminal: python default_promote.py (ou python3 default_promote.py)
+3.1 - Para fazer o promote do melhor modelo com valor F1 melhor que 0.60
+em um terminal: python defaultXg_promote.py (ou python3 defaultXg_promote.py)
+
 
 
