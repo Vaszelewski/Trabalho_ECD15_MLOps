@@ -60,9 +60,11 @@ em um terminal: python defaultRandomForest.py (ou python3 defaultRandomForest.py
 
 em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowRf.db
 
-AJUSTAR O MODELO IF PARA FICAR RODANDO E MELHORAR O NOME DAS VERSÕES GERADA.
 3 - para executar o modelo XGBoost
 em um terminal: python defaultXgBoost.py (ou python3 defaultXgBoost.py)
 
 em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowXg.db
+
+4 - Para fazer o promote dos modelos, executar:
+
 
