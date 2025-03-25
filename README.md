@@ -60,10 +60,14 @@ pip install mlflow pandas scikit-learn xgboost matplotlib
 2 - para executar o modelo Random Forest Classifier
 - em um terminal: python defaultRandomForest.py (ou python3 defaultRandomForest.py)
 
-- em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowRf.db
+- em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowRf.db --5000
 
 2.1 - Para fazer o promote do melhor modelo com valor F1 melhor que 0.60
 - em um terminal: python defaultRf_promote.py (ou python3 defaultRf_promote.py)
+
+
+executar o models.py para registro do modelo.
+
 
 2.2 - Para fazer deploy do modelo em produção, deve:
 configurar variável de ambiente:
@@ -76,16 +80,20 @@ e então rodar o comando:
 3 - para executar o modelo XGBoost
 - em um terminal: python defaultXgBoost.py (ou python3 defaultXgBoost.py)
 
-- em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowXg.db
+- em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowXg.db --port 7000
 
 3.1 - Para fazer o promote do melhor modelo com valor F1 melhor que 0.60
 - em um terminal: python defaultXg_promote.py (ou python3 defaultXg_promote.py)
+
+
+executar o models.py para registro do modelo.
+
 
 3.2 - Para fazer deploy do modelo em produção, deve:
 configurar variável de ambiente:
 - MLFLOW_TRACKING_URI_XG --> "sqlite:///mlflowXg.db"
 e então rodar o comando:
-- mlflow models serve -m "models:/XGBoostGridSearch/Production" --env-manager virtualenv --no-conda --port 8000
+- mlflow models serve -m "models:/XGBoostGridSearch/Production" --env-manager virtualenv --no-conda --port 9000
 
 
 
