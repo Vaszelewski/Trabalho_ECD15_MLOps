@@ -63,7 +63,7 @@ pip install mlflow pandas scikit-learn xgboost matplotlib
 2.1 - Para fazer o promote do melhor modelo com valor F1 melhor que 0.60
 - em um terminal: python defaultRf_promote.py (ou python3 defaultRf_promote.py)
 
-2.2Para fazer deploy do modelo em produção, deve:
+2.2 - Para fazer deploy do modelo em produção, deve:
 configurar variável de ambiente:
 - MLFLOW_TRACKING_URI_RF --> "sqlite:///mlflowRf.db"
 e então rodar o comando:
