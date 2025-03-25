@@ -49,9 +49,9 @@ Prever inadimplência do cliente para pagamento de empréstimo.
 
 
 
-## Execução:
+# Execução:
 
-# RandomForestGridSearch
+## RandomForestGridSearch
 
 1 - antes de tudo, certificar que tem instalado as tecnologias:
 pip install mlflow pandas scikit-learn xgboost matplotlib
@@ -71,7 +71,7 @@ configurar variável de ambiente:
 e então rodar o comando:
 - mlflow models serve -m "models:/RandomForestGridSearch/Production" --env-manager virtualenv --no-conda --port 8000
 
-# XGBoostGridSearch
+## XGBoostGridSearch
 
 3 - para executar o modelo XGBoost
 - em um terminal: python defaultXgBoost.py (ou python3 defaultXgBoost.py)
