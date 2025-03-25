@@ -63,6 +63,13 @@ em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowRf.db
 2.1 - Para fazer o promote do melhor modelo com valor F1 melhor que 0.60
 em um terminal: python defaultRf_promote.py (ou python3 defaultRf_promote.py)
 
+2.2Para fazer deploy do modelo em produção, deve:
+configurar variável de ambiente:
+- MLFLOW_TRACKING_URI_RF --> "sqlite:///mlflowRf.db"
+e então rodar o comando:
+- mlflow models serve -m "models:/RandomForestGridSearch/Production" --env-manager virtualenv --no-conda --port 8000
+
+
 
 3 - para executar o modelo XGBoost
 em um terminal: python defaultXgBoost.py (ou python3 defaultXgBoost.py)
@@ -71,6 +78,14 @@ em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowXg.db
 
 3.1 - Para fazer o promote do melhor modelo com valor F1 melhor que 0.60
 em um terminal: python defaultXg_promote.py (ou python3 defaultXg_promote.py)
+
+3.2 - Para fazer deploy do modelo em produção, deve:
+configurar variável de ambiente:
+- MLFLOW_TRACKING_URI_XG --> "sqlite:///mlflowXg.db"
+e então rodar o comando:
+- mlflow models serve -m "models:/XGBoostGridSearch/Production" --env-manager virtualenv --no-conda --port 8000
+
+
 
 
 
