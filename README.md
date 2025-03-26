@@ -60,7 +60,7 @@ pip install mlflow pandas scikit-learn xgboost matplotlib
 2 - para executar o modelo Random Forest Classifier
 - em um terminal: python defaultRandomForest.py (ou python3 defaultRandomForest.py)
 
-- em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowRf.db --5000
+- em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowRf.db --port 5000
 
 2.1 - Para fazer o promote do melhor modelo com valor F1 melhor que 0.60
 - em um terminal: python defaultRf_promote.py (ou python3 defaultRf_promote.py)
