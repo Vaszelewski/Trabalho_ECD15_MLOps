@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1742944586227
+current_stage: None
+description: null
+last_updated_timestamp: 1742944586227
+name: XGBoostGridSearch
+run_id: null
+run_link: null
+source: file:///C:/Users/Everton Vaszelewski/Downloads/Trabalho_ECD15_MLOps-master/mlruns/1/6f93e7e89ad2497090694d8244befd59/artifacts/xgboost_grid_search
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Everton Vaszelewski/Downloads/Trabalho_ECD15_MLOps-master/mlruns/1/6f93e7e89ad2497090694d8244befd59/artifacts/xgboost_grid_search
+user_id: null
+version: 1
