@@ -67,15 +67,12 @@ Arquivos relacionados ao modelo RandomForestGridSearch:
 - monitoring_report_df.html
 - monitoring_report_df_new_data.html
 
-1 - Antes de tudo, certificar que tem instalado as tecnologias com o comando abaixo:
-```
-pip install mlflow pandas scikit-learn xgboost matplotlib evidently
-```
+### 1 - Antes de tudo, certificar que tem instalado as tecnologias com o comando abaixo:
+```pip install mlflow pandas scikit-learn xgboost matplotlib evidently```
 
-
-
-2 - para executar o modelo Random Forest Classifier
-- em um terminal: python defaultRandomForest.py (ou python3 defaultRandomForest.py)
+### 2 - Para executar o modelo Random Forest Classifier
+- No 1º terminal, executar:
+```python defaultRandomForest.py (ou python3 defaultRandomForest.py)```
 
 - em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowRf.db --port 5000
 
