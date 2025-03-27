@@ -4,12 +4,18 @@
 
 O objetivo deste trabalho foi aplicar conceitos e práticas de MLOps para desenvolver um pipeline de Machine Learning funcional e automatizado. Além disso, explorar um conjunto de dados real, implementar modelos preditivos e integrar o processo com ferramentas de monitoramento, versionamento e deploy. O foco do projeto foi a construção de um fluxo completo, contemplando desde a preparação dos dados até a entrega do modelo em produção, garantindo rastreabilidade e reprodutibilidade.
 
+## Contém:
+- Pipeline de dados e treinamento.
+- Código da API para inferência.
+- Scripts de monitoramento e re-treinamento.
+- Arquivos de configuração.
+
 
 ## Dataset e Problema:
 Loan Default Prediction Dataset
 [Acesso](https://www.kaggle.com/datasets/nikhil1e9/loan-default)
 
-Prever inadimplência do cliente para pagamento de empréstimo.
+O Loan Default Prediction Dataset é um dataset disponível no Kaggle (link acima) que contém informações sobre empréstimos concedidos para clientes, incluindo informações demográficas, financeiras, pessoais (como idade, escolaridade) e histórico de crédito. O objetivo do problema é, através de dois modelos, Random Forest Classifier e XGBoost, desenvolver um modelo capaz de identificar quais clientes têm maior probabilidade de inadimplência, ou seja, de não conseguirem pagar o empréstimo.
 
 ## Ferramentas:
 
@@ -20,31 +26,31 @@ Prever inadimplência do cliente para pagamento de empréstimo.
 - GitHub (para controle de versão)
 
 ## Etapas do Projeto (MLOps Pipeline)
-1 - Exploração e Pré-processamento dos Dados
+###1 - Exploração e Pré-processamento dos Dados
 - Análise exploratória e tratamento de valores ausentes.
 - Normalização/Padronização dos dados quando necessário.
 
 
-2 - Treinamento e Avaliação do Modelo
+###2 - Treinamento e Avaliação do Modelo
 - Implementação dos modelos Random Forest Classifier e XGBoost e comparação de métricas.
 - Utilização do MLflow para rastrear experimentos.
 
 
-3 - Versionamento e Armazenamento do Modelo
+###3 - Versionamento e Armazenamento do Modelo
 - Registro do modelo no MLflow Model Registry.
 
 
-4 - Implantação do Modelo
+###4 - Implantação do Modelo
 - Construção de uma API com FastAPI ou Flask para servir previsões (mlflow).
 - Deploy local.
 
 
-5 - Monitoramento e Re-treinamento
+###5 - Monitoramento e Re-treinamento
 - Implementação de monitoramento de drift de dados com Evidently AI.
 - Definição de uma estratégia para re-treinamento automático do modelo.
 
 
-6 - Conteinerização e Documentação
+###6 - Conteinerização e Documentação
 - Instruções de execução/documentação do pipeline no repositório.
 
 
