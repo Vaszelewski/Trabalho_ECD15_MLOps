@@ -58,9 +58,20 @@ O Loan Default Prediction Dataset é um dataset disponível no Kaggle (link acim
 # Execução:
 
 ## RandomForestGridSearch
+Arquivos relacionados ao modelo RandomForestGridSearch:
+- defaultRandomForest.py
+- defaultRf_promote.py
+- mlflowRf.db
+- models.py
+- monitor.py
+- monitoring_report_df.html
+- monitoring_report_df_new_data.html
 
-1 - antes de tudo, certificar que tem instalado as tecnologias:
+1 - Antes de tudo, certificar que tem instalado as tecnologias com o comando abaixo:
+```
 pip install mlflow pandas scikit-learn xgboost matplotlib evidently
+```
+
 
 
 2 - para executar o modelo Random Forest Classifier
