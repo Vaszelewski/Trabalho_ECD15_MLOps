@@ -15,7 +15,7 @@ Prever inadimplência do cliente para pagamento de empréstimo.
 
 - Linguagem: Python 3.10
 - MLflow (para rastreamento e versionamento de modelos)
-- ***Evidently AI (para monitoramento de drift)
+- Evidently AI (para monitoramento de drift)
 - FastAPI/Flask (para disponibilização do modelo via API, (ex. usando Mlflow)
 - GitHub (para controle de versão)
 
@@ -54,7 +54,7 @@ Prever inadimplência do cliente para pagamento de empréstimo.
 ## RandomForestGridSearch
 
 1 - antes de tudo, certificar que tem instalado as tecnologias:
-pip install mlflow pandas scikit-learn xgboost matplotlib
+pip install mlflow pandas scikit-learn xgboost matplotlib evidently
 
 
 2 - para executar o modelo Random Forest Classifier
