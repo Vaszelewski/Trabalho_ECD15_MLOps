@@ -75,6 +75,10 @@ configurar variável de ambiente:
 e então rodar o comando:
 - mlflow models serve -m "models:/RandomForestGridSearch/Production" --env-manager virtualenv --no-conda --port 8000
 
+
+2.3 - Para realizar o monitoramento e drift, deve:
+- executar o comando: python monitor.py (ou python3 monitor.py)
+
 ## XGBoostGridSearch
 
 3 - para executar o modelo XGBoost
@@ -95,53 +99,6 @@ configurar variável de ambiente:
 e então rodar o comando:
 - mlflow models serve -m "models:/XGBoostGridSearch/Production" --env-manager virtualenv --no-conda --port 9000
 
-para teste, usar o payload abaixo:
-curl -X POST "http://localhost:8000/invocations" \
-
-     -H "Content-Type: application/json" \
-
-     -d '{
-
-           "instances": [
-
-             {
-             "Age": 28.0,
-             
-             "Income": 9579,
-             
-             "LoanAmount": 20500,
-             
-             "CreditScore": 700,
-             
-             "MonthsEmployed": 70,
-             
-             "NumCreditLines": 4,
-             
-             "InterestRate": 15.23,
-             
-             "LoanTerm": 36,
-             
-             "DTIRatio": 0.68,
-             
-             "Education": 1,
-             
-             "EmploymentType": 1,
-             
-             "MaritalStatus": 0,
-             
-             "HasMortgage": 1,
-             
-             "HasDependents": 1,
-             
-             "LoanPurpose": 0,
-             
-             "HasCoSigner": 1: 
-
-             }
-
-           ]
-
-         }'
-
-
+3.3 - Para realizar o monitoramento e drift, deve:
+- executar o comando: python monitorXg.py (ou python3 monitorXg.py)
 
