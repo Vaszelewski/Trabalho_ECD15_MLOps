@@ -39,12 +39,12 @@ Prever inadimplência do cliente para pagamento de empréstimo.
 - Deploy local.
 
 
-**5 - Monitoramento e Re-treinamento
+5 - Monitoramento e Re-treinamento
 - Implementação de monitoramento de drift de dados com Evidently AI.
 - Definição de uma estratégia para re-treinamento automático do modelo.
 
 
-**6 - Conteinerização e Documentação
+6 - Conteinerização e Documentação
 - Instruções de execução/documentação do pipeline no repositório.
 
 
