@@ -81,40 +81,73 @@ python defaultRf_promote.py (ou python3 defaultRf_promote.py)
 
 ### 4 - No 4º terminal, executar o arquivo abaixo para para registrar o modelo:
 ```
-python models.py
+python models.py (ou python3 models.py)
 ```
 
-### 5 Para fazer deploy do melhor modelo em produção, deve:
+### 5 - Para fazer deploy do melhor modelo em produção, deve:
 - Configurar a variável de ambiente (instruções em Windows):
-  MLFLOW_TRACKING_URI_RF --> "sqlite:///mlflowRf.db"
   
-e então rodar o comando:
-- mlflow models serve -m "models:/RandomForestGridSearch/Production" --env-manager virtualenv --no-conda --port 8000
+  MLFLOW_TRACKING_URI_RF --> "sqlite:///mlflowRf.db"
 
+- E então rodar o comando abaixo para efetivar o deploy:
+```
+mlflow models serve -m "models:/RandomForestGridSearch/Production" --env-manager virtualenv --no-conda --port 8000
+```
 
-2.3 - Para realizar o monitoramento e drift, deve:
-- executar o comando: python monitor.py (ou python3 monitor.py)
+### 6 - Para realizar o monitoramento e drift, deve executar o comando abaixo:
+```
+python monitor.py (ou python3 monitor.py)
+```
 
 ## XGBoostGridSearch
 
-3 - para executar o modelo XGBoost
-- em um terminal: python defaultXgBoost.py (ou python3 defaultXgBoost.py)
+Arquivos relacionados ao modelo XGBoostGridSearch:
+- defaultXgBoost.py
+- defaultXg_promote.py
+- mlflowXg.db
+- models.py
+- monitorXg.py
+- monitoring_report_df_XG.html
+- monitoring_report_df_new_data_XG.html
 
-- em outro terminal: mlflow ui --backend-store-uri sqlite:///mlflowXg.db --port 7000
+### 1 - Antes de tudo, certificar que tem instalado as tecnologias com o comando abaixo:
+```
+pip install mlflow pandas scikit-learn xgboost matplotlib evidently
+```
 
-3.1 - Para fazer o promote do melhor modelo com valor F1 melhor que 0.60
-- em um terminal: python defaultXg_promote.py (ou python3 defaultXg_promote.py)
+### 2 - Para executar o modelo XGBoost
+- No 1º terminal, executar o arquivo python abaixo para gerar as versões dos modelos:
+```
+python defaultXgBoost.py (ou python3 defaultXgBoost.py)
+```
+- No 2º terminal, executar o arquivo abaixo para verificar as informações na ui do Mlflow:
+```
+mlflow ui --backend-store-uri sqlite:///mlflowXg.db --port 7000
+```
 
+### 3 - Para fazer o promote do melhor modelo com valor F1 melhor que 0.60
+- No 3º terminal, executar o arquivo abaixo para verificar o melhor modelo:
+```
+python defaultXg_promote.py (ou python3 defaultXg_promote.py)
+```
 
-executar o models.py para registro do modelo.
+### 4 - No 4º terminal, executar o arquivo abaixo para para registrar o modelo:
+```
+python models.py
+```
 
+### 5 - Para fazer deploy do melhor modelo em produção, deve:
+- Configurar a variável de ambiente (instruções em Windows):
+  
+  MLFLOW_TRACKING_URI_XG --> "sqlite:///mlflowXg.db"
 
-3.2 - Para fazer deploy do modelo em produção, deve:
-configurar variável de ambiente:
-- MLFLOW_TRACKING_URI_XG --> "sqlite:///mlflowXg.db"
-e então rodar o comando:
-- mlflow models serve -m "models:/XGBoostGridSearch/Production" --env-manager virtualenv --no-conda --port 9000
+- E então rodar o comando abaixo para efetivar o deploy:
+```
+mlflow models serve -m "models:/XGBoostGridSearch/Production" --env-manager virtualenv --no-conda --port 9000
+```
 
-3.3 - Para realizar o monitoramento e drift, deve:
-- executar o comando: python monitorXg.py (ou python3 monitorXg.py)
+### 6 - Para realizar o monitoramento e drift, deve executar o comando abaixo:
+```
+python monitorXg.py (ou python3 monitorXg.py)
+```
 
