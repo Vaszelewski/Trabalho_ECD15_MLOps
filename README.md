@@ -14,7 +14,7 @@ O objetivo deste trabalho foi aplicar conceitos e práticas de MLOps para desenv
 Loan Default Prediction Dataset
 [Acesso](https://www.kaggle.com/datasets/nikhil1e9/loan-default)
 
-O Loan Default Prediction Dataset é um dataset disponível no Kaggle (link acima) que contém informações sobre empréstimos concedidos para clientes, incluindo informações demográficas, financeiras, pessoais (como idade, escolaridade) e histórico de crédito. O objetivo do problema é, através de dois modelos, Random Forest Classifier e XGBoost, desenvolver um modelo capaz de identificar quais clientes têm maior probabilidade de inadimplência, ou seja, de não conseguirem pagar o empréstimo.
+O Loan Default Prediction Dataset é um dataset disponível no Kaggle (link acima) que contém informações sobre empréstimos concedidos para clientes, incluindo informações demográficas, financeiras, pessoais (como idade, escolaridade) e histórico de crédito. O problema abordado foi desenvolver é identificar quais clientes têm maior probabilidade de inadimplência, ou seja, de não conseguirem pagar o empréstimo.
 
 ## Ferramentas:
 - Linguagem: Python 3.10
