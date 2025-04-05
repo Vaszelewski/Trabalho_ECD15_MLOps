@@ -5,6 +5,7 @@
 O objetivo deste trabalho foi aplicar conceitos e práticas de MLOps para desenvolver um pipeline de Machine Learning funcional e automatizado. Além disso, explorar um conjunto de dados real, implementar modelos preditivos e integrar o processo com ferramentas de monitoramento, versionamento e deploy. O foco do projeto foi a construção de um fluxo completo, contemplando desde a preparação dos dados até a entrega do modelo em produção, garantindo rastreabilidade e reprodutibilidade.
 
 ## Contém:
+- Relatório Completo do Projeto
 - Pipeline de dados e treinamento.
 - Código da API para inferência.
 - Scripts de monitoramento e re-treinamento.
